@@ -13,7 +13,7 @@ pwd
 
 var=$(./terraform output instance-public-ip)
 
-echo "hello" + $var
+echo "hello Mathias" + $var
 sleep 1m
 echo $var > host
 ansible -m ping all -i ./host --private-key=keyfile -u ubuntu
